@@ -28,7 +28,8 @@
  //header.style.borderBottom = 'solid 3px #000';
  
 
- //GET ELEMNT BY CLASS NAME
+ GET ELEMNT BY CLASS NAME
+ 
  var item = document.getElementsByClassName('list-group-item');
  console.log(item);
  console.log(item[1]);
@@ -48,4 +49,26 @@ for(var i = 0;i < item.length;i++){
 }
 
 item[2].style.backgroundColor = 'green';
+
+
+
+GET BY TAG NAME
+var li = document.getElementsByTagName('li');
+console.log(li);
+console.log(li[1]);
+li[1].textContent = 'Hello 2';
+li[1].style.fontWeight = 'bold';
+ 
+
+// for(var i = 0;i < li.length;i++){
+//     li[i].style.fontWeight = 'bold';
+
+// }
+
+for(var i = 0;i < li.length;i++){
+    li[i].style.backgroundColor = '#f4f4f4';
+
+}
+
+
 
