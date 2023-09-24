@@ -16,17 +16,36 @@
  //GET ELEMENT BY ID
  //console.log(document.getElementById('header-title'));
 
- var headerTitle = document.getElementById('header-title');
+ //var headerTitle = document.getElementById('header-title');
   //console.log(headerTitle);
  //headerTitle.textContent = 'Hello'
  //headerTitle.textContent = 'Suletha'
  //console.log(headerTitle.innerText);
  //headerTitle.innerHTML = '<h3>Hello</h3>';
- headerTitle.style.borderBottom = 'solid 3px #000';
+ //headerTitle.style.borderBottom = 'solid 3px #000';
 
- var header = document.getElementById('main-header');
+ //var header = document.getElementById('main-header');
  //header.style.borderBottom = 'solid 3px #000';
  
 
  //GET ELEMNT BY CLASS NAME
+ var item = document.getElementsByClassName('list-group-item');
+ console.log(item);
+ console.log(item[1]);
+ item[1].textContent = 'Hello 2';
+ //item[1].style.fontWeight = 'bold';
+ 
+
+
+for(var i = 0;i < item.length;i++){
+    item[i].style.fontWeight = 'bold';
+
+}
+
+for(var i = 0;i < item.length;i++){
+    item[i].style.backgroundColor = '#f4f4f4';
+
+}
+
+item[2].style.backgroundColor = 'green';
 
